@@ -1,0 +1,546 @@
+  /* Mathilde global styles */
+  body {
+      background: #FFFFFF
+  }
+
+  :root {
+      --line-border-fill: #9AB248;
+      --line-border-empty: #FFE3DB;
+  }
+
+  .mth_a {
+      color: #FF6427 !important;
+  }
+
+  .mth_formL2 {
+      background-color: #FFFFFF;
+      font-family: Open Sans;
+      margin-top: 3em;
+  }
+
+  .mt-6 {
+      margin-top: 1.9rem !important;
+  }
+
+  .mth_input {
+      height: 56px !important;
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-color: rgb(192, 191, 191) !important;
+      border-image: initial !important;
+      border-radius: 6px !important;
+  }
+
+  .mth_input[type=number]:focus {
+      border: 1px solid #FF6427 !important;
+      box-shadow: 0 0 0 0rem rgba(254, 254, 254, 0.25) !important;
+  }
+
+  .mth_input[type=text]:focus {
+      border: 1px solid #FF6427 !important;
+      box-shadow: 0 0 0 0rem rgba(254, 254, 254, 0.25) !important;
+  }
+
+  .mth_input[type=email]:focus {
+      border: 1px solid #FF6427 !important;
+      box-shadow: 0 0 0 0rem rgba(254, 254, 254, 0.25) !important;
+  }
+
+  input.invalid {
+      background-color: #ffdddd;
+      border: 2px solid red !important;
+  }
+
+  .invalid2 {
+      background-color: #ffdddd;
+      border: 2px solid red;
+  }
+
+  .tab {
+      display: none
+  }
+
+  .mth_btn {
+      width: 180px;
+      height: 56px;
+      background: #FFFFFF;
+      border: 1px solid #FF6427;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      cursor: pointer;
+      color: #FF6427;
+
+  }
+
+  .mth_btn:hover {
+      background: #FF6427;
+      border: 2px solid #AA3406;
+      border-radius: 6px;
+      color: white;
+  }
+
+  #prevBtn {
+      padding: 1px 5px 1px 5px;
+      cursor: pointer;
+  }
+
+
+  .step {
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      opacity: 0.5
+  }
+
+  .step.active {
+      opacity: 1
+  }
+
+  .step.finish {
+      background-color: #17639a
+  }
+
+  .all-steps {
+      text-align: center;
+      visibility: hidden;
+
+  }
+
+  .thanks-message {
+      display: none;
+  }
+
+
+
+
+  /* Hide the browser's default radio button */
+
+
+
+  /* Create a custom radio button */
+
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+  }
+
+
+
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+
+  .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+
+
+  /* Show the indicator (dot/circle) when checked */
+
+  .container input:checked~.checkmark:after {
+      display: block;
+  }
+
+
+  /* Style the indicator (dot/circle) */
+
+  .container .checkmark:after {
+
+      border-radius: 50%;
+      background: white;
+  }
+
+  .mth_cont_alert {
+      text-align: -webkit-center;
+  }
+
+  .mth_alert {
+      background: #C8EEFE;
+      border-radius: 6px;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: justify;
+      color: #195B77;
+
+  }
+
+  .mth_text_alert {
+      padding: 1.3em;
+  }
+
+  .mth_text_alert2 {
+      display: none;
+  }
+
+  .mth_btn_alert {
+      border-radius: 50%;
+      border: 1px solid #195B77;
+      padding: 0px 4px 1px 5px;
+      background: #C8EEFE;
+      color: #195B77;
+  }
+
+  .mth_btn_regresar {
+      background-color: #FF6427 !important;
+      border: 1px solid #FF6427 !important;
+      box-shadow: 2px 4px 6px rgba(132, 83, 55, 0.25) !important;
+      border-radius: 50% !important;
+      color: white;
+      margin-bottom: 1em;
+  }
+
+  .mth_alert {
+      background-color: #C8EEFE !important;
+      border-radius: 6px;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: justify;
+      color: #195B77;
+
+
+  }
+
+
+  .mth_btn_alert {
+      border-radius: 50%;
+      padding: 0px 5px 2px 5px;
+      background: #C8EEFE;
+      color: #195B77;
+      font-size: 27px;
+      border: 0.5px solid #195B77;
+
+
+  }
+
+  .form-check-input:checked {
+      background-color: #FF6427;
+      border-color: #FF6427;
+  }
+
+  .mth_principal_alert {
+      text-align: -webkit-center;
+  }
+
+  .mth_img_thank {
+      width: 40%;
+  }
+
+  .mth_img_final {
+      width: 50%;
+  }
+
+  input:disabled {
+      background-color: white !important;
+      color: #278e5e !important;
+      border: 2px solid #0ede0e !important;
+  }
+
+  .contenedor_card {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 7em;
+  }
+
+  .mth_list {
+      list-style: none !important;
+      text-align: -webkit-left !important;
+  }
+
+  .mth_header {
+      height: 2em;
+      background-color: #ff6427
+  }
+
+  .card {
+      border: 1px solid #ff6427 !important;
+  }
+
+  .mth_input_puntos {
+      height: 56px !important;
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-color: rgb(255 125 13) !important;
+      border-image: initial !important;
+      border-radius: 6px !important;
+      color: rgb(255 125 13) !important;
+      background-color: white !important;
+  }
+
+  .mth_container_puntos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .mth_container_puntos_icon {
+      border: 2px solid #ff6600;
+      border-radius: 13px;
+      padding: 0.5em;
+      box-shadow: 0px 1px 9px 6px #e9e9e9;
+      width: 30%;
+  }
+
+  .alert_puntos {
+
+      font-size: 11px !important;
+
+  }
+
+  .progress-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 30px;
+      max-width: 100%;
+      width: 350px;
+  }
+
+  .progress-container::before {
+      content: "";
+      background-color: var(--line-border-empty);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%;
+      z-index: -1;
+  }
+
+  .progress {
+      background-color: var(--line-border-fill);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 0%;
+      z-index: -1;
+      transition: 0.4s ease;
+  }
+
+  .circle {
+      background-color: #FF6427;
+      color: #fff;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #e0e0e0;
+      transition: 0.4s ease;
+  }
+
+  .circle.active {
+      border-color: var(--line-border-fill);
+      background-color: var(--line-border-fill);
+  }
+
+  .mth_steps {
+      display: flex;
+      justify-content: center;
+  }
+
+  .mth_opt_select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+      color: #9AB248 !important;
+      border-color: #9AB248 !important;
+
+      font-size: 1.4rem;
+  }
+
+
+  .mth_opt_select:hover {
+      height: 70px;
+      width: 100%;
+      color: #fff !important;
+      border-color: #9AB248 !important;
+      background-color: #9AB248 !important;
+  }
+
+
+  .mth_opt_select:target {
+      height: 70px;
+      width: 100%;
+      color: #fff !important;
+      border-color: #9AB248 !important;
+      background-color: #9AB248 !important;
+  }
+
+  .btn-check:checked+.mth_opt_select {
+      background-color: #9AB248 !important;
+      color: #fff !important;
+  }
+
+  .mth_ingresa_puntos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .mthl4_container_1 {
+      padding: 0;
+      margin: 0;
+  }
+
+  .mthl4_container_bg1 {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+  }
+
+  .mthl4_container_general {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+
+  .mthl4_title_1 {
+
+      font-size: 40px;
+      line-height: 42px;
+  }
+
+  .mthl4_p1 {
+
+      font-size: 28px;
+      line-height: 30px;
+  }
+
+  .mthl4_cards {
+      align-items: center;
+
+      border-radius: 24px;
+  }
+
+  .mthl4_cards:hover {
+      border: 1px solid #FF6427;
+      box-shadow: 8px 5px 29px rgba(0, 0, 0, 0.3);
+      border-radius: 24px;
+  }
+
+  .mthl4_icons_cards {
+      width: 80px;
+      padding: 25px 0px 0px 0px;
+  }
+
+  .mthl4_titles_cards_1 {
+
+      font-size: 20px;
+      line-height: 13px;
+      text-align: center;
+      color: #2B2B2B;
+  }
+
+  .mthl4_text_cards {
+
+      font-size: 16px;
+      line-height: 15px;
+      text-align: center;
+      color: #2B2B2B;
+      padding: 1px 30px 1px 30px;
+      margin-top: 1.2em;
+  }
+
+  .mthl4_radios_cards {
+      padding: 1px 35px 14px 65px;
+      text-align: left !important;
+
+  }
+
+  .form-check-input:checked {
+      background-color: #FF6427 !important;
+      border-color: #FF6427 !important;
+  }
+
+  .mthl4_labels_check_cards {
+
+      font-size: 16px;
+      line-height: 19px;
+      color: #2B2B2B;
+  }
+
+  .mthl4_btn_cards {
+
+      background: #FF6427;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .mthl4_fondo {
+      width: 100%;
+  }
+
+  .mth_container_hipo {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .mth_guion {
+      padding: 0;
+      margin: 0;
+      text-align: -webkit-center;
+      font-size: 50px;
+      color: #bbbbbb;
+      border-radius: 30px;
+  }
+
+  .mth_text_start {
+      text-align: start !important;
+  }
+
+  .mth_border_none {
+      border: none !important;
+  }
+
+  .card-financiamiento {
+      background: #FDFDFD;
+      border: 1px solid #FF6427;
+      box-shadow: 2px 4px 9px rgba(132, 83, 55, 0.3);
+      border-radius: 6px;
+      width: 22rem;
+  }
+
+  .card-financiamiento-body {
+      padding: 1em 2em;
+  }
+
+  .mth_input:hover {
+      border-color: rgb(255 100 39) !important;
+  }
+
+
+  .mth_guion {
+      display: block;
+  }
+
+  #tipo_cedula {
+      display: none;
+  }
+
+  @media (min-width: 104px) and (max-width: 690px) {
+      .mth_guion {
+          display: none;
+      }
+
+      #tipo_cedula {
+          display: block;
+      }
+  }
+

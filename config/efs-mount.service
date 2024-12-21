@@ -1,0 +1,11 @@
+[Unit]
+Description=Monta EFS al inicio/reinicio/apagado
+After=network.target
+
+[Service]
+User=ec2-user
+ExecStart=/bin/sh -c "sudo mount /dev/mnt/efs" && sudo systemctl restart httpd
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

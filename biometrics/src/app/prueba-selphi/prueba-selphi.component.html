@@ -1,0 +1,25 @@
+  <facephi-sdk-provider
+    apikey="T812SFv1poJTRXx7owF2s4a6cN4pOhlvvuWscqMU"
+    steps="START,SELPHI_WIDGET,SELPHID_WIDGET,FINISH"
+    customer-id="angular-example"
+    bundle-path="/assets/widgets"
+    type="ONBOARDING" 
+    debug
+  >
+    <facephi-selphi-widget
+      bundle-path="/assets/widgets/selphi"
+      accessibility="false"
+      authenticate-time="1"
+      camera-type="CameraType.Front"
+      crop-image="true"
+      image-format="image/jpeg"
+      language="es"
+      timeout="30000"
+      tutorial="true"
+      show-log="true"
+      (extractionFinish)="onExtractionFinished($event)"
+      (exceptionCaptured)="onExceptionCaptured($event)"
+      (userCancel)="onUserCancel($event)"
+
+    ></facephi-selphi-widget>
+  </facephi-sdk-provider>
